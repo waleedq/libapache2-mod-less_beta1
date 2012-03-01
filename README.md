@@ -10,8 +10,8 @@ this apache2 module is written using c.
 when a request is sent to any css file this request will be handeled by this module, the module will compile the css file and create another file from this css file with .less extension, then the module will pass the compiled version as a resposne to the request 
 
 example:
-	request: 
-		 http://localhost/themes/css/style.css <=== this css file containes LESS codes insde it
+
+		 request: http://localhost/themes/css/style.css <=== this css file containes LESS codes insde it
 
 		  the module will compile style.css and save the compiled version to :
 		 
