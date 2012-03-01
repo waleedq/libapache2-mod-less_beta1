@@ -10,7 +10,8 @@ this apache2 module is written using c.
 when a request is sent to any css file this request will be handeled by this module, the module will compile the css file and create another file from this css file with .less extension, then the module will pass the compiled version as a resposne to the request 
 
 example:
-	request: http://localhost/themes/css/style.css <=== this css file containes LESS codes insde it
+	request: 
+		 http://localhost/themes/css/style.css <=== this css file containes LESS codes insde it
 
 		  the module will compile style.css and save the compiled version to :
 		 
@@ -38,7 +39,7 @@ example:
 	copy /bin/less.load to /etc/apache2/mods-available/less.load
 	copy /bin/less.conf to /etc/apache2/mods-available/less.conf
 
-	you can edit the less.conf file to change when this module is gonna be invoked 
+you can edit the less.conf file to change when this module is gonna be invoked 
 
 	for example : this conf with "\.css$" will invoke the module when any .css file is requested 
 		<FilesMatch "\.css$">
@@ -48,7 +49,8 @@ example:
 	changing "\.css$" to "\.less$" will invoke the module only for requested files with .less extension
 
 # developers
-	waleed al qadi (waleedq).
+
+waleed al qadi (waleedq).
 	
 	note: feel free to fork and contrib to this project
 		
