@@ -1,6 +1,6 @@
 # mod-less is LESS apache2 module :
 
-This apache2 module is writen to compile LESS code inside the css files when they are requested so the process will 
+This apache2 module is written to compile LESS code inside the css files when they are requested so the process will 
 be transparent from any script using css no matter what it's language is
 
 this apache2 module is written using c.
@@ -31,7 +31,7 @@ example:
 		sudo update_rubygems     
 		sudo gem install less
 
-# Installation
+# Installation :
 	
 	copy /bin/mod_less.so to /usr/lib/apache2/modules/mod_less.so
 		  chmod 644 /usr/lib/apache2/modules/mod_less.so
@@ -48,7 +48,7 @@ you can edit the less.conf file to change when this module is gonna be invoked
 
 	changing "\.css$" to "\.less$" will invoke the module only for requested files with .less extension
 
-# Compile from source
+# Compile from source :
 source can be found in /src/mod_less.c
 to compile it you will need the apxs2 tool which can be found in the apache2-prefork-dev package
 
@@ -61,7 +61,7 @@ after installing apxs2 tool, cd to the src directory and execute this command
 compiled file "mod_less.so" will be automatically copied to /usr/lib/apache2/modules/mod_less.so and chmoded.
 you only need to add the less.load and less.conf as mentioned in the Installation section above.
 
-# Developers
+# Developers :
 
 waleed al qadi (waleedq).
 	
