@@ -48,20 +48,7 @@ you can edit the less.conf file to change when this module is gonna be invoked
 
 	changing "\.css$" to "\.less$" will invoke the module only for requested files with .less extension
 
-# Compile from source
-source can be found in /src/mod_less.c
-to compile it you will need the apxs2 tool which can be found in the apache2-prefork-dev package
-
-	sudo apt-get install apache2-prefork-dev
-
-after installing apxs2 tool, cd to the src directory and execute this command 
-
-	sudo apxs2 -c -i mod_less.c
-
-compiled file "mod_less.so" will be automatically copied to /usr/lib/apache2/modules/mod_less.so and chmoded.
-you only need to add the less.load and less.conf as mentioned in the Installation section above.
-
-# Developers
+# developers
 
 waleed al qadi (waleedq).
 	
